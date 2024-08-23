@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    min-height: 100svh;
+    height: max-content;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 2rem auto 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+img {
+    width: 10rem;
+}
+
+input,
+button {
+    font-family: inherit;
+    border: none;
+    padding: 0.9rem 0.2rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+input {
+    color: #432000;
+    background-color: #DCE1EB;
+}
+
+input:focus {
+    outline-color: #AC485A;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #AC485A;
+    cursor: pointer;
+}
+
+.lists {
+    list-style: none;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 2rem auto 0;
+    padding-left: 8px;
+}
+
+.lists li {
+    background-color: antiquewhite;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.6rem;
+}
+
+li span {
+    font-size: 1.25rem;
+
+}
+
+.delete-item {
+    color: red;
+    margin-left: 1rem;
+    background-color: #fff;
+    padding: 0.2rem 1rem;
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 13rem;
+    }
+}
